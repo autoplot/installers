@@ -20,7 +20,7 @@ and thus does not require Administrator rights issue the following commands.
 ```
 
 Open the file `make-exe-installer.bat` and update the following variables for
-your build machine an version of Autoplot:
+your build machine and version of Autoplot:
  * INNO_PATH
  * PACKAGER
  * VERNUM
