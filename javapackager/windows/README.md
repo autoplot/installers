@@ -19,15 +19,14 @@ and thus does not require Administrator rights issue the following commands.
 > cd installers\javapackager\windows
 ```
 
-Open the file `make-exe-installer.bat` and update the following variables for
-your build machine and version of Autoplot:
- * INNO_PATH
- * PACKAGER
- * VERNUM
-
+Open the file `make-exe-installer.bat`:
 ```batchfile
 > notepad make-exe-installer.bat
 ```
+and update the following variables for your build machine and version of Autoplot:
+ * INNO_PATH
+ * PACKAGER
+ * VERNUM
 
 Then run the script.
 ```batchfile
