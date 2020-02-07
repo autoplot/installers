@@ -1,13 +1,13 @@
 Infrastructure step.
 
-# Install the Oracle Java 8 JDK.  Since netbeans is handy anyway, the following
+* Install the Oracle Java 8 JDK.  Since netbeans is handy anyway, the following
   version is recommended.
   https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html
 
-# In addition to jdk1.8 you'll need Inno Setup Compiler from here:
+* In addition to jdk1.8 you'll need Inno Setup Compiler from here:
   http://files.jrsoftware.org/is/5/
 	
-# You'll need the signtool.exe program from the Windows 10 SDK.  That is
+* You'll need the signtool.exe program from the Windows 10 SDK.  That is
   available with the "Tools for Visual Studio 2019" download available from
   https://visualstudio.microsoft.com/downloads/
    
