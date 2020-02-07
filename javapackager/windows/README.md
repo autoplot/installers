@@ -11,7 +11,7 @@ Infrastructure step.
   available with the "Tools for Visual Studio 2019" download available from
   https://visualstudio.microsoft.com/downloads/
    
-To build a `*.exe` installer that does not write to the registry hive HKLM, 
+To build an `*.exe` installer that does not write to the registry hive HKLM, 
 and thus does not require Administrator rights issue the following commands.
 
 ```batchfile
