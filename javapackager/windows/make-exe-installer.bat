@@ -13,15 +13,15 @@ rem
 rem In addition to jdk1.8 you'll need Inno Setup Compiler from here
 rem http://files.jrsoftware.org/is/5/
 
+SET VERNUM=20200208a
 
-curl.exe http://autoplot.org/jnlp/latest/autoplot.jar -o autoplot.jar
+curl.exe http://autoplot.org/jnlp/%VERNUM%/autoplot.jar -o autoplot.jar
 
 SET "INNO_PATH=C:\Program Files (x86)\Inno Setup 5"
 SET PATH=%INNO_PATH%;%PATH%
 SET "PACKAGER=C:\Program Files\Java\jdk1.8.0_111\bin\javapackager"
 
 SET "MAIN=org.autoplot.AutoplotUI"
-SET VERNUM=2020a_1
 
 rem The default install directory for non-admin installs is:
 rem %HOMEPATH%\APPDATA\Local\Autoplot
