@@ -28,6 +28,8 @@ and update the following variables for your build machine and version of Autoplo
  * PACKAGER
  * VERNUM
 
+The file Autoplot.iss must also have the version within updated as well, and a future version may do this.
+
 Then run the script.
 ```batchfile
 > .\make-exe-installer.bat
