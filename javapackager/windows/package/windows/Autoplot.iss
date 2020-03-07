@@ -3,14 +3,14 @@
 [Setup]
 AppId={{org.autoplot}}
 AppName=Autoplot
-AppVersion=2020a1
-AppVerName=Autoplot 2020a1
+AppVersion=20200306a
+AppVerName=Autoplot 20200306a
 AppPublisher=Das Developers
 AppComments=Autoplot
 AppCopyright=Copyright (C) 2020
-;AppPublisherURL=http://java.com/
-;AppSupportURL=http://java.com/
-;AppUpdatesURL=http://java.com/
+AppPublisherURL=https://das2.org/
+AppSupportURL=http://autoplot.org/
+AppUpdatesURL=https://das2.org/
 DefaultDirName={localappdata}\Autoplot
 DisableStartupPrompt=Yes
 DisableDirPage=No
@@ -23,7 +23,7 @@ DefaultGroupName=Das Developers
 LicenseFile=
 ;WinXP or above
 MinVersion=0,5.1 
-OutputBaseFilename=Autoplot-2020a1
+OutputBaseFilename=Autoplot-20200306a
 Compression=lzma
 SolidCompression=yes
 PrivilegesRequired=lowest
@@ -41,10 +41,31 @@ Root: HKCU; Subkey: "Software\Classes\.vap"; ValueType: string; ValueName: ""; V
 Root: HKCU; Subkey: "Software\Classes\AutoplotState"; ValueType: string; ValueName: ""; ValueData: "Autoplot State"; Flags: uninsdeletekey
 Root: HKCU; Subkey: "Software\Classes\AutoplotState\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\Autoplot.exe,0"
 Root: HKCU; Subkey: "Software\Classes\AutoplotState\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\Autoplot.exe"" ""%1"""
+Root: HKCU; SubKey: "Software\Classes\MIME\Database\Content Type\application/vnd.autoplot.vap+xml"; ValueType: string; ValueName: "Extension"; ValueData: ".vap"
+
 Root: HKCU; Subkey: "Software\Classes\.pngwalk"; ValueType: string; ValueName: ""; ValueData: "PNGwalk"; Flags: uninsdeletevalue
 Root: HKCU; Subkey: "Software\Classes\PNGwalk"; ValueType: string; ValueName: ""; ValueData: "PNG Walk"; Flags: uninsdeletekey
 Root: HKCU; Subkey: "Software\Classes\PNGwalk\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\Autoplot.exe,0"
 Root: HKCU; Subkey: "Software\Classes\PNGwalk\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\Autoplot.exe"" ""%1"""
+Root: HKCU; SubKey: "Software\Classes\MIME\Database\Content Type\application/vnd.autoplot.pngwalk"; ValueType: string; ValueName: "Extension"; ValueData: ".pngwalk"
+
+Root: HKCU; Subkey: "Software\Classes\.cdf"; ValueType: string; ValueName: ""; ValueData: "CDF"; Flags: uninsdeletevalue
+Root: HKCU; Subkey: "Software\Classes\CDF"; ValueType: string; ValueName: ""; ValueData: "Common Data Format"; Flags: uninsdeletekey
+Root: HKCU; Subkey: "Software\Classes\CDF\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\Autoplot.exe,0"
+Root: HKCU; Subkey: "Software\Classes\CDF\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\Autoplot.exe"" ""%1"""
+
+Root: HKCU; Subkey: "Software\Classes\.d2s"; ValueType: string; ValueName: ""; ValueData: "das2bin"; Flags: uninsdeletevalue
+Root: HKCU; Subkey: "Software\Classes\das2bin"; ValueType: string; ValueName: ""; ValueData: "Das2 Stream"; Flags: uninsdeletekey
+Root: HKCU; Subkey: "Software\Classes\das2bin\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\Autoplot.exe,0"
+Root: HKCU; Subkey: "Software\Classes\das2bin\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\Autoplot.exe"" ""%1"""
+Root: HKCU; SubKey: "Software\Classes\MIME\Database\Content Type\application/vnd.das2.das2stream"; ValueType: string; ValueName: "Extension"; ValueData: ".d2s"
+
+Root: HKCU; Subkey: "Software\Classes\.d2t"; ValueType: string; ValueName: ""; ValueData: "das2text"; Flags: uninsdeletevalue
+Root: HKCU; Subkey: "Software\Classes\das2text"; ValueType: string; ValueName: ""; ValueData: "Das2 Text Stream"; Flags: uninsdeletekey
+Root: HKCU; Subkey: "Software\Classes\das2text\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\Autoplot.exe,0"
+Root: HKCU; Subkey: "Software\Classes\das2text\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\Autoplot.exe"" ""%1"""
+Root: HKCU; SubKey: "Software\Classes\MIME\Database\Content Type\text/vnd.das2.das2stream"; ValueType: string; ValueName: "Extension"; ValueData: ".d2t"
+
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"

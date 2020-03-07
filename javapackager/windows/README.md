@@ -9,7 +9,9 @@ Infrastructure step.
 	
 * You'll need the signtool.exe program from the Windows 10 SDK.  That is
   available with the "Tools for Visual Studio 2019" download available from
-  https://visualstudio.microsoft.com/downloads/
+  https://visualstudio.microsoft.com/downloads/.  Once installed signtool
+  is likely to be found at:  
+  "C:\Program Files (x86)\Windows Kits\10\bin\x64\signtool.exe"
    
 To build an `*.exe` installer that does not write to the registry hive HKLM, 
 and thus does not require Administrator rights issue the following commands.
