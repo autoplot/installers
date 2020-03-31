@@ -3,8 +3,9 @@
 [Setup]
 AppId={{org.autoplot}}
 AppName=Autoplot
-AppVersion=20200306a
-AppVerName=Autoplot 20200306a
+AppVersion=v2020a_5
+AppVerName=Autoplot v2020a_5
+OutputBaseFilename=Autoplot-v2020a_5
 AppPublisher=Das Developers
 AppComments=Autoplot
 AppCopyright=Copyright (C) 2020
@@ -23,7 +24,6 @@ DefaultGroupName=Das Developers
 LicenseFile=
 ;WinXP or above
 MinVersion=0,5.1 
-OutputBaseFilename=Autoplot-20200306a
 Compression=lzma
 SolidCompression=yes
 PrivilegesRequired=lowest
