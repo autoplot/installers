@@ -13,7 +13,7 @@ rem
 rem In addition to jdk1.8 you'll need Inno Setup Compiler from here
 rem http://files.jrsoftware.org/is/5/
 
-SET VERNUM=v2022a_6
+SET VERNUM=20220726d
 
 curl.exe http://autoplot.org/jnlp/%VERNUM%/autoplot.jar -o autoplot.jar
 
