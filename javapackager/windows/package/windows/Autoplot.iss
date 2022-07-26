@@ -66,6 +66,11 @@ Root: HKCU; Subkey: "Software\Classes\das2text\DefaultIcon"; ValueType: string; 
 Root: HKCU; Subkey: "Software\Classes\das2text\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\Autoplot.exe"" ""%1"""
 Root: HKCU; SubKey: "Software\Classes\MIME\Database\Content Type\text/vnd.das2.das2stream"; ValueType: string; ValueName: "Extension"; ValueData: ".d2t"
 
+Root: HKCU; Subkey: "Software\Classes\.lblx"; ValueType: string; ValueName: ""; ValueData: "pds4label"; Flags: uninsdeletevalue
+Root: HKCU; Subkey: "Software\Classes\pds4labal"; ValueType: string; ValueName: ""; ValueData: "PDS4 Label"; Flags: uninsdeletekey
+Root: HKCU; Subkey: "Software\Classes\pds4labal\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\Autoplot.exe,0"
+Root: HKCU; Subkey: "Software\Classes\pds4labal\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\Autoplot.exe"" ""%1"""
+Root: HKCU; SubKey: "Software\Classes\MIME\Database\Content Type\application/vnd.nasa.pds.pds4+xml"; ValueType: string; ValueName: "Extension"; ValueData: ".lblx"
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
