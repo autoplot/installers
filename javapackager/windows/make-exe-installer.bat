@@ -13,7 +13,7 @@ rem
 rem In addition to jdk1.8 you'll need Inno Setup Compiler from here
 rem http://files.jrsoftware.org/is/5/
 
-SET VERNUM=v2020a_5
+SET VERNUM=v2022a_6
 
 curl.exe http://autoplot.org/jnlp/%VERNUM%/autoplot.jar -o autoplot.jar
 
@@ -32,7 +32,7 @@ SET VEND=-vendor "Das Developers"
 
 rem sub-bundler arguments.  These are particular to INNO 5 and exe output
 SET "DIR=-BinstalldirChooser=true"
-SET "JOPT=-BjvmOptions=-Xmx4096m"
+SET "JOPT=-BjvmOptions=-Xmx4096m -B-Dautoplot.release.type=exe"
 SET "ICO=-Bicon=autoplot.ico"
 SET "VER=-BappVersion=%VERNUM%"
 rem SET "LIC=-BlicenseFile=LICENSE.txt"
@@ -44,9 +44,15 @@ rem SET "LIC=-BlicenseFile=LICENSE.txt"
 rem Now we sign the output, depends on winsigner.bat which is not in this 
 rem repository due to the fact that it contains sensitive information.
 
+@echo on
+
 winsigner.bat dist\bundles\Autoplot-%VERNUM%.exe
+
 winverify.bat dist\bundles\Autoplot-%VERNUM%.exe
 
+echo "execute at command line:"
+echo "scp dist\bundles\Autoplot-%VERNUM%.exe 192.168.1.151:/home/jbf/public_html/autoplot/tmp/x_Autoplot.exe"
 
+pause
 
 
