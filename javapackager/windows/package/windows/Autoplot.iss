@@ -3,12 +3,12 @@
 [Setup]
 AppId={{org.autoplot}}
 AppName=Autoplot
-AppVersion=v2020a_5
-AppVerName=Autoplot v2020a_5
-OutputBaseFilename=Autoplot-v2020a_5
+AppVersion=20220726d
+AppVerName=Autoplot 20220726d
+OutputBaseFilename=Autoplot-20220726d
 AppPublisher=Das Developers
 AppComments=Autoplot
-AppCopyright=Copyright (C) 2020
+AppCopyright=Copyright (C) 2022
 AppPublisherURL=https://das2.org/
 AppSupportURL=http://autoplot.org/
 AppUpdatesURL=https://das2.org/
